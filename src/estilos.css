@@ -1,6 +1,5 @@
 /* Menu.css */
 .navbar {
-  background-color: #333;
   color: #fff;
   padding: 10px 20px;
 }
@@ -9,6 +8,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.btn-cerrar {
+  background-color: #3490dc; /* Azul */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-cerrar:hover {
+  background-color: #2779bd; /* Azul oscuro */
 }
 
 .navbar-brand {
@@ -52,7 +63,7 @@
 }
 
 .menu-links a:hover {
-  color: #4caf50;
+  color: #05005a;
 }
 
 @media (max-width: 768px) {

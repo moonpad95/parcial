@@ -1,12 +1,23 @@
-import './App.css';
-import Menu from './Menu.js';
-import Conceptos from './conceptos.js';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Menu from "./Menu.js";
+import Conceptos from "./conceptos.js";
+import Alumnos from "./alumnos.js";
+import Home from "./home.js";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Menu />
-      <Conceptos />
+      <div className="container mx-auto flex justify-center items-center w-full">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />{" "}
+            <Route path="/conceptos" element={<Conceptos />} />{" "}
+            <Route path="/alumnos" element={<Alumnos />} />{" "}
+          </Routes>{" "}
+        </BrowserRouter>{" "}
+      </div>
     </div>
   );
 }
